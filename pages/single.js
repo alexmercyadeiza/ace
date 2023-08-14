@@ -1,7 +1,9 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useRouter } from "next/router";
 
 export default function Single() {
+  const router = useRouter();
   return (
     <>
       <Header />
@@ -20,7 +22,7 @@ export default function Single() {
       {/* <!-- Project --> */}
       <div className="grid">
         <div className="gap-12 space-y-10 px-6 py-12 md:px-28 md:py-28">
-          <div className="cursor-pointer text-sm font-semibold text-dark-blue hover:opacity-60">
+          <div onClick={() => router.push('/projects')} className="cursor-pointer text-sm font-semibold text-dark-blue hover:opacity-60">
             Go back
           </div>
           <div className="font-semibold uppercase tracking-widest">

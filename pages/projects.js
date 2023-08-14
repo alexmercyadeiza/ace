@@ -1,7 +1,11 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import { useRouter } from "next/router";
 
 export default function Projects() {
+
+  const router = useRouter();
+
   return (
     <>
       <Header />
@@ -22,7 +26,7 @@ export default function Projects() {
         <div className="gap-6 px-6 md:py-28 py-16 md:gap-12 md:px-28">
           <div className="grid md:grid-cols-3 md:gap-20 gap-10">
             <div className="grid cursor-pointer bg-dark-blue py-12 text-white hover:bg-light-blue">
-              <div className="flex items-center space-x-4 place-self-center">
+              <div onClick={() => router.push('/single')} className="flex items-center space-x-4 place-self-center">
                 <svg
                   width="24"
                   height="24"

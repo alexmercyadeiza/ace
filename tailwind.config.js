@@ -10,6 +10,11 @@ module.exports = {
       fontFamily: {
         sans: ["'Work Sans'"],
       },
+      colors: {
+        "light-blue": "#40bcff",
+        "dark-blue": "#050583",
+        "ace-gray": "#0a0a0a",
+      },
       // backgroundImage: {
       //   'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       //   'gradient-conic':
@@ -17,5 +22,5 @@ module.exports = {
       // },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };

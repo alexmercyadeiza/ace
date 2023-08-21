@@ -25,7 +25,7 @@ export default function Home() {
         <div
           className="h-80 w-full place-self-center bg-slate-300 bg-cover bg-center bg-no-repeat md:h-3/5 md:p-10"
           style={{
-            backgroundImage: `url('https://res.cloudinary.com/daojlqwdo/image/upload/v1691863033/ace/5_plpbud.jpg')`,
+            backgroundImage: `url('https://res.cloudinary.com/daojlqwdo/image/upload/v1692577688/ace/pexels-monstera-9430883_bqsij3.png')`,
           }}
         ></div>
       </div>

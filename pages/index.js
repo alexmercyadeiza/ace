@@ -270,7 +270,7 @@ export default function Home() {
               <div
                 className="h-56 bg-gray-400 bg-cover bg-center"
                 style={{
-                  backgroundImage: `url('https://res.cloudinary.com/daojlqwdo/image/upload/v1691875505/ace/pexels-elle-hughes-1660027_j4irzl.jpg')`,
+                  backgroundImage: `url('https://res.cloudinary.com/daojlqwdo/image/upload/v1692643940/ace/8a8c892282_cdmlmz.jpg')`,
                 }}
               ></div>
               <div className="space-y-6 bg-gray-200 p-6 md:p-10">

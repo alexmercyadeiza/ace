@@ -268,7 +268,7 @@ export default function Home() {
             <div>
               <div className="h-1 bg-light-blue"></div>
               <div
-                className="h-56 bg-gray-400 bg-cover bg-center"
+                className="h-56 bg-gray-400 bg-cover bg-top"
                 style={{
                   backgroundImage: `url('https://res.cloudinary.com/daojlqwdo/image/upload/v1692643940/ace/8a8c892282_cdmlmz.jpg')`,
                 }}

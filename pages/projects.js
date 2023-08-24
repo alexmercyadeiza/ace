@@ -26,7 +26,10 @@ export default function Projects() {
         <div className="gap-6 px-6 md:py-28 py-16 md:gap-12 md:px-28">
           <div className="grid md:grid-cols-3 md:gap-20 gap-10">
             <div className="grid cursor-pointer bg-dark-blue py-12 text-white hover:bg-light-blue">
-              <div onClick={() => router.push('/single')} className="flex items-center space-x-4 place-self-center">
+              <div
+                onClick={() => router.push("/projects/strategy-development")}
+                className="flex items-center space-x-4 place-self-center"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -44,7 +47,10 @@ export default function Projects() {
             </div>
 
             <div className="grid cursor-pointer bg-dark-blue py-12 text-white hover:bg-light-blue">
-              <div className="flex items-center space-x-4 place-self-center">
+              <div
+                onClick={() => router.push("/projects/policy-development")}
+                className="flex items-center space-x-4 place-self-center"
+              >
                 <svg
                   width="24"
                   height="24"
@@ -62,7 +68,10 @@ export default function Projects() {
             </div>
 
             <div className="grid cursor-pointer bg-dark-blue py-12 text-white hover:bg-light-blue">
-              <div className="flex items-center space-x-4 place-self-center">
+              <div
+                onClick={() => router.push("/projects/program-delivery")}
+                className="flex items-center space-x-4 place-self-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="fill-current"
@@ -79,7 +88,10 @@ export default function Projects() {
             </div>
 
             <div className="grid cursor-pointer bg-dark-blue py-12 text-white hover:bg-light-blue">
-              <div className="flex items-center space-x-4 place-self-center">
+              <div
+                onClick={() => router.push("/projects/capacity-building")}
+                className="flex items-center space-x-4 place-self-center"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -95,7 +107,7 @@ export default function Projects() {
             </div>
 
             <div className="grid cursor-pointer bg-dark-blue py-12 text-white hover:bg-light-blue">
-              <div className="flex items-center space-x-4 place-self-center">
+              <div onClick={() => router.push("/projects/data-management")} className="flex items-center space-x-4 place-self-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 20 20"

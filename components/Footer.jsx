@@ -1,28 +1,39 @@
+import { useRouter } from "next/router";
 export default function Footer() {
+  const router = useRouter();
   return (
     // <!-- Footer -->
     <div className="space-y-10 bg-gradient-to-r from-dark-blue to-blue-500 px-6 pb-10 pt-8 text-white md:px-10 md:pt-20">
       <div className="grid space-y-10 md:grid-cols-3 md:gap-20 md:space-y-0">
         <div className="grid space-y-6 md:grid-flow-col md:gap-20 md:space-y-0">
           <div className="space-y-6 text-sm font-medium uppercase tracking-widest">
-            <div className="cursor-pointer hover:opacity-70">
+            <div
+              onClick={() => router.push("/who-we-are")}
+              className="cursor-pointer hover:opacity-70"
+            >
               Expertise and Services
             </div>
-            <div className="cursor-pointer hover:opacity-70">
+            <div
+              onClick={() => router.push("/projects")}
+              className="cursor-pointer hover:opacity-70"
+            >
               Previous Projects
             </div>
-            <div className="cursor-pointer hover:opacity-70">
+            <div
+              onClick={() => router.push("/framework")}
+              className="cursor-pointer hover:opacity-70"
+            >
               Project Framework
             </div>
             <div className="cursor-pointer hover:opacity-70">Work with Us</div>
           </div>
 
-          <div className="space-y-6 text-sm font-medium uppercase tracking-widest">
+          {/* <div className="space-y-6 text-sm font-medium uppercase tracking-widest">
             <div className="cursor-pointer hover:opacity-70">Our Partners</div>
             <div className="cursor-pointer hover:opacity-70">Our Clients</div>
             <div className="cursor-pointer hover:opacity-70">Contact Us</div>
             <div className="cursor-pointer hover:opacity-70">Support</div>
-          </div>
+          </div> */}
         </div>
 
         <div className="col-span-2 space-y-6 place-self-end self-start border-t border-white border-opacity-30 pt-10 text-sm font-medium uppercase tracking-widest md:border-none md:pt-0">
@@ -84,15 +95,24 @@ export default function Footer() {
                 d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
               />
             </svg>
-            <div className="md:flex hidden">
+            <a
+              className="md:flex hidden"
+              href="https://goo.gl/maps/BRmC84Yhd5V2gM7N8"
+              target="_blank"
+              rel="noreferrer"
+            >
               2 Limpopo Street Maitama, Off Yedseram, <br />
               White building, Abuja.
-            </div>
+            </a>
 
-            <div className="md:hidden flex">
-              2 Limpopo Street Maitama, Off Yedseram,
-              White building, Abuja.
-            </div>
+            <a
+              className="md:hidden flex"
+              href="https://goo.gl/maps/BRmC84Yhd5V2gM7N8"
+              target="_blank"
+              rel="noreferrer"
+            >
+              2 Limpopo Street Maitama, Off Yedseram, White building, Abuja.
+            </a>
           </div>
         </div>
       </div>

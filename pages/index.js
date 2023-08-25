@@ -6,7 +6,7 @@ import { useRef } from "react";
 import { useRouter } from 'next/router';
 
 export default function Home() {
-  const autoplay = useRef(Autoplay({ delay: 2000 }));
+  const autoplay = useRef(Autoplay({ delay: 4000 }));
   const router = useRouter();
   return (
     <>

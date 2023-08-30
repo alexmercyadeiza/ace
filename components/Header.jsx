@@ -100,12 +100,12 @@ export default function Header() {
                 </svg>
               </div>
               <a
-                href="#"
+                href="https://goo.gl/maps/TthEZk2vASwnn37e8"
                 target="_blank"
                 rel="noreferrer"
                 className="text-right text-sm capitalize text-white"
               >
-                Flat B3, Lumendeo Estate, Wuye, Abuja - FCT
+                House B3, Lumen Court Estate, Wuye, Abuja - FCT
               </a>
             </div>
           </div>

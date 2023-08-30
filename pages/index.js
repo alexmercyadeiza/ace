@@ -7,7 +7,8 @@ import { useRouter } from 'next/router';
 import Head from "next/head";
 
 export default function Home() {
-  const autoplay = useRef(Autoplay({ delay: 4000 }));
+  const autoplay = useRef(Autoplay({ delay: 3000 }));
+  const autoplay_vm = useRef(Autoplay({ delay: 3500 }));
   const router = useRouter();
   return (
     <>
@@ -33,7 +34,10 @@ export default function Home() {
           property="og:description"
           content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
         />
-        <meta property="og:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+        />
 
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
@@ -43,7 +47,10 @@ export default function Home() {
           property="twitter:description"
           content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
         />
-        <meta property="twitter:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+        />
       </Head>
 
       {/* <!-- Hero --> */}
@@ -70,7 +77,6 @@ export default function Home() {
           className="place-self-center w-full"
           withControls={false}
           loop
-          // withIndicators
         >
           <Carousel.Slide
             className="bg-cover bg-center h-[33rem]"
@@ -99,6 +105,112 @@ export default function Home() {
               backgroundImage: `url("https://res.cloudinary.com/daojlqwdo/image/upload/v1692881708/ace/5d842addc7_ffcwon.jpg")`,
             }}
           ></Carousel.Slide>
+        </Carousel>
+      </div>
+
+      {/* Vision, mission, core values slider */}
+      <div className="px-6 hidden md:grid py-10 md:px-10">
+        <Carousel
+          plugins={[autoplay_vm.current]}
+          withControls={false}
+          slideSize="33.333333%"
+          slideGap="md"
+          loop
+          align="start"
+          slidesToScroll={1}
+          onMouseEnter={autoplay.current.stop}
+          onMouseLeave={autoplay.current.reset}
+        >
+          <Carousel.Slide>
+            <div className="bg-blue-500 p-10 text-white">
+              <div className="space-y-7">
+                <div className="inline-flex bg-white p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-6 w-6 fill-current text-blue-500 md:h-14 md:w-14"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 5c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm0-2c-2.209 0-4 1.792-4 4 0 2.209 1.791 4 4 4s4-1.791 4-4c0-2.208-1.791-4-4-4z" />
+                  </svg>
+                </div>
+                <div className="text-dark-blue font-bold text-3xl font-medium md:text-3xl">
+                  Our Vision
+                </div>
+
+                <div className="md:text-xl">
+                  To be the foremost thought leader and actor in eradicating
+                  health and social inequities, thus pioneering knowledge and
+                  practice on the utilization of effective altruism.
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div class="bg-blue-600 p-10 text-white">
+              <div class="space-y-7">
+                <div class="inline-flex bg-white p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 fill-current text-blue-600 md:h-14 md:w-14"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M6 12c0 2.206 1.794 4 4 4 1.761 0 3.242-1.151 3.775-2.734l2.224-1.291.001.025c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6c1.084 0 2.098.292 2.975.794l-2.21 1.283c-.248-.048-.503-.077-.765-.077-2.206 0-4 1.794-4 4zm4-2c-1.105 0-2 .896-2 2s.895 2 2 2 2-.896 2-2l-.002-.015 3.36-1.95c.976-.565 2.704-.336 3.711.159l4.931-2.863-3.158-1.569.169-3.632-4.945 2.87c-.07 1.121-.734 2.736-1.705 3.301l-3.383 1.964c-.29-.163-.621-.265-.978-.265zm7.995 1.911l.005.089c0 4.411-3.589 8-8 8s-8-3.589-8-8 3.589-8 8-8c1.475 0 2.853.408 4.041 1.107.334-.586.428-1.544.146-2.18-1.275-.589-2.69-.927-4.187-.927-5.523 0-10 4.477-10 10s4.477 10 10 10c5.233 0 9.521-4.021 9.957-9.142-.301-.483-1.066-1.061-1.962-.947z" />
+                  </svg>
+                </div>
+                <div class="text-dark-blue text-3xl font-medium md:text-3xl">
+                  Our Mission
+                </div>
+
+                <div class="md:text-xl">
+                  To create scalable solutions for socio-economic disparities,
+                  challenge established norms with analytical insights, adapt
+                  swiftly amidst challenges, and serve vulnerable communities
+                  with respect and professionalism.
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div class="bg-blue-700 p-10 text-white">
+              <div class="space-y-7">
+                <div class="inline-flex bg-white p-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-6 w-6 fill-current text-blue-700 md:h-14 md:w-14"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 5.999l-5.621 2.986c-.899-.104-1.806.191-2.474.859-.662.663-.95 1.561-.862 2.428l-3.043 5.728 5.724-3.042c.884.089 1.772-.205 2.432-.865.634-.634.969-1.524.859-2.473l2.985-5.621zm-5.97 7.22c-.689 0-1.25-.559-1.25-1.249-.001-.691.559-1.251 1.25-1.25.69 0 1.25.56 1.25 1.25-.001.689-.56 1.249-1.25 1.249z" />
+                  </svg>
+                </div>
+                <div class="text-dark-blue text-3xl font-medium md:text-3xl">
+                  Core Values
+                </div>
+
+                <div class="md:text-xl">
+                  We champion empathy and humanity, foster innovation,
+                  prioritize collaborative efforts and prudence, uphold
+                  unwavering integrity, and celebrate diversity, equity, and
+                  inclusion in all we do.
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div class="bg-blue-700 p-10 text-white">
+              <div class="flex flex-col space-y-7">
+                <div class="text-white text-3xl font-medium md:text-3xl">
+                  Learn more about ACE Strategy & Consult
+                </div>
+
+                <div onClick={() => router.push('/who-we-are')} class="self-start bg-white px-4 text-xs cursor-pointer py-2 uppercase tracking-widest text-black">
+                  learn more
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
         </Carousel>
       </div>
 

@@ -97,20 +97,22 @@ export default function Footer() {
             </svg>
             <a
               className="md:flex hidden"
-              href="#"
+              href="https://goo.gl/maps/TthEZk2vASwnn37e8"
               target="_blank"
               rel="noreferrer"
             >
-              Flat B3, Lumendeo Estate, Wuye, Abuja - FCT
+              House B3, Lumen Court Estate, Plot No. 669, R. I Uzoma Str, <br />{" "}
+              Off Olusegun Obasanjo Way, Wuye, Abuja - FCT
             </a>
 
             <a
               className="md:hidden flex"
-              href="#"
+              href="https://goo.gl/maps/TthEZk2vASwnn37e8"
               target="_blank"
               rel="noreferrer"
             >
-              Flat B3, Lumendeo Estate, Wuye, Abuja - FCT
+              House B3, Lumen Court Estate, Plot No. 669, R. I Uzoma Str, <br />{" "}
+              Off Olusegun Obasanjo Way, Wuye, Abuja - FCT
             </a>
           </div>
         </div>

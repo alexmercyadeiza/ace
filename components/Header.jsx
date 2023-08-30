@@ -100,12 +100,12 @@ export default function Header() {
                 </svg>
               </div>
               <a
-                href="https://goo.gl/maps/BRmC84Yhd5V2gM7N8"
+                href="#"
                 target="_blank"
                 rel="noreferrer"
                 className="text-right text-sm capitalize text-white"
               >
-                2 Limpopo Street Maitama, Off Yedseram, White building, Abuja.
+                Flat B3, Lumendeo Estate, Wuye, Abuja - FCT
               </a>
             </div>
           </div>

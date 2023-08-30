@@ -4,6 +4,7 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { useRef } from "react";
 import { useRouter } from 'next/router';
+import Head from "next/head";
 
 export default function Home() {
   const autoplay = useRef(Autoplay({ delay: 4000 }));
@@ -11,6 +12,39 @@ export default function Home() {
   return (
     <>
       <Header />
+
+      <Head>
+        <title>Ace Strategy & Consults</title>
+        <meta
+          name="description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta
+          name="keywords"
+          content="Ace Strategy, Consults, evidence-based solutions, human-centred design, actionable solutions"
+        />
+        <meta name="author" content="Ace Strategy & Consults" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acestrategy.org" />
+        <meta property="og:title" content="Ace Strategy & Consults" />
+        <meta
+          property="og:description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta property="og:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://acestrategy.org" />
+        <meta property="twitter:title" content="Ace Strategy & Consults" />
+        <meta
+          property="twitter:description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta property="twitter:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+      </Head>
 
       {/* <!-- Hero --> */}
       <div className="grid md:grid-cols-2 pb-20">

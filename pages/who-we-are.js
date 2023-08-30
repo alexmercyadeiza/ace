@@ -1,10 +1,44 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Head from "next/head";
 
 export default function WhoWeAre() {
     return (
       <>
         <Header />
+
+         <Head>
+        <title>About Us &mdash; Ace Strategy & Consults</title>
+        <meta
+          name="description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta
+          name="keywords"
+          content="Ace Strategy, Consults, evidence-based solutions, human-centred design, actionable solutions"
+        />
+        <meta name="author" content="Ace Strategy & Consults" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acestrategy.org" />
+        <meta property="og:title" content="Ace Strategy & Consults" />
+        <meta
+          property="og:description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta property="og:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://acestrategy.org" />
+        <meta property="twitter:title" content="Ace Strategy & Consults" />
+        <meta
+          property="twitter:description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta property="twitter:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+      </Head>
 
         {/* <!-- SubHeader --> */}
         <div

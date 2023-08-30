@@ -1,5 +1,6 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import Head from "next/head";
 import { useRouter } from "next/router";
 
 export default function Single() {
@@ -7,6 +8,46 @@ export default function Single() {
   return (
     <>
       <Header />
+
+      <Head>
+        <title>Strategy Development &mdash; Ace Strategy & Consults</title>
+        <meta
+          name="description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta
+          name="keywords"
+          content="Ace Strategy, Consults, evidence-based solutions, human-centred design, actionable solutions"
+        />
+        <meta name="author" content="Ace Strategy & Consults" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://acestrategy.org" />
+        <meta property="og:title" content="Ace Strategy & Consults" />
+        <meta
+          property="og:description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta
+          property="og:image"
+          content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+        />
+
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://acestrategy.org" />
+        <meta property="twitter:title" content="Ace Strategy & Consults" />
+        <meta
+          property="twitter:description"
+          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+        />
+        <meta
+          property="twitter:image"
+          content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+        />
+      </Head>
+
       {/* <!-- SubHeader --> */}
       <div
         className="bg-gray-200 bg-cover bg-bottom p-14 text-white md:p-40"
@@ -22,7 +63,10 @@ export default function Single() {
       {/* <!-- Project --> */}
       <div className="grid">
         <div className="gap-12 space-y-10 px-6 py-12 md:px-28 md:py-28">
-          <div onClick={() => router.push('/projects')} className="cursor-pointer text-sm font-semibold text-dark-blue hover:opacity-60">
+          <div
+            onClick={() => router.push("/projects")}
+            className="cursor-pointer text-sm font-semibold text-dark-blue hover:opacity-60"
+          >
             Go back
           </div>
           <div className="font-semibold uppercase tracking-widest">
@@ -36,7 +80,9 @@ export default function Single() {
               </div>
 
               <div className="space-y-2">
-                <div className="font-bold uppercase tracking-widest">Clients</div>
+                <div className="font-bold uppercase tracking-widest">
+                  Clients
+                </div>
                 <div>The Zamfara State Primary Health Care Board</div>
               </div>
 
@@ -64,7 +110,9 @@ export default function Single() {
               </div>
 
               <div className="space-y-2">
-                <div className="font-bold uppercase tracking-widest">Result(s)</div>
+                <div className="font-bold uppercase tracking-widest">
+                  Result(s)
+                </div>
                 <img
                   src="https://res.cloudinary.com/daojlqwdo/image/upload/v1692018608/ace/projs/pd10_tru2di.jpg"
                   alt=""
@@ -72,7 +120,9 @@ export default function Single() {
               </div>
 
               <div className="space-y-2">
-                <div className="font-bold uppercase tracking-widest">Donor(s)</div>
+                <div className="font-bold uppercase tracking-widest">
+                  Donor(s)
+                </div>
                 <div className="flex w-1/2 gap-10">
                   <img
                     src="https://res.cloudinary.com/daojlqwdo/image/upload/v1691875981/ace/partners/p3-2_ak8nrg.png"

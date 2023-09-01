@@ -54,12 +54,12 @@ export default function Home() {
       </Head>
 
       {/* <!-- Hero --> */}
-      <div className="grid md:grid-cols-2 pb-20">
+      <div className="grid md:grid-cols-2 pb-16">
         <div className="space-y-10 px-6 py-10 md:px-28">
           <div className="text-4xl font-semibold capitalize text-dark-blue md:text-6xl">
             ACE strategy & Consult limited
           </div>
-          <div className="text-xl text-gray-700 md:text-2xl">
+          <div className="text-xl text-gray-700 md:text-xl">
             We empower individuals and organizations with innovative solutions
             and real-time insights. Focused on data-driven decisions, we enhance
             systems through evidence-backed strategies and prioritize
@@ -109,104 +109,412 @@ export default function Home() {
       </div>
 
       {/* Vision, mission, core values slider */}
-      <div className="px-6 hidden md:grid py-10 md:px-10">
+      <div className="md:px-20 px-2">
         <Carousel
           plugins={[autoplay_vm.current]}
-          withControls={false}
-          slideSize="33.333333%"
-          slideGap="md"
+          withControls={true}
+          showNavigation
+          // slideSize="33.333333%"
+          // slideGap="md"
           loop
-          align="start"
-          slidesToScroll={1}
+          // align="start"
+          // slidesToScroll={1}
           onMouseEnter={autoplay.current.stop}
           onMouseLeave={autoplay.current.reset}
         >
           <Carousel.Slide>
-            <div className="bg-blue-500 p-10 text-white">
-              <div className="space-y-7">
-                <div className="inline-flex bg-white p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6 fill-current text-blue-500 md:h-14 md:w-14"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12.015 7c4.751 0 8.063 3.012 9.504 4.636-1.401 1.837-4.713 5.364-9.504 5.364-4.42 0-7.93-3.536-9.478-5.407 1.493-1.647 4.817-4.593 9.478-4.593zm0-2c-7.569 0-12.015 6.551-12.015 6.551s4.835 7.449 12.015 7.449c7.733 0 11.985-7.449 11.985-7.449s-4.291-6.551-11.985-6.551zm-.015 5c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2zm0-2c-2.209 0-4 1.792-4 4 0 2.209 1.791 4 4 4s4-1.791 4-4c0-2.208-1.791-4-4-4z" />
-                  </svg>
-                </div>
-                <div className="text-dark-blue font-bold text-3xl font-medium md:text-3xl">
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
                   Our Vision
                 </div>
-
-                <div className="md:text-xl">
-                  To be the foremost thought leader and actor in eradicating
-                  health and social inequities, thus pioneering knowledge and
-                  practice on the utilization of effective altruism.
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 md:text-xl">
+                    To be the foremost thought leader and actor in eradicating
+                    health and social inequities, thus pioneering knowledge and
+                    practice on the utilization of effective altruism.
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <img
+                      className="w-[28rem]"
+                      src="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_589,h_400,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </Carousel.Slide>
 
+          {/* Mission */}
           <Carousel.Slide>
-            <div class="bg-blue-600 p-10 text-white">
-              <div class="space-y-7">
-                <div class="inline-flex bg-white p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 fill-current text-blue-600 md:h-14 md:w-14"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M6 12c0 2.206 1.794 4 4 4 1.761 0 3.242-1.151 3.775-2.734l2.224-1.291.001.025c0 3.314-2.686 6-6 6s-6-2.686-6-6 2.686-6 6-6c1.084 0 2.098.292 2.975.794l-2.21 1.283c-.248-.048-.503-.077-.765-.077-2.206 0-4 1.794-4 4zm4-2c-1.105 0-2 .896-2 2s.895 2 2 2 2-.896 2-2l-.002-.015 3.36-1.95c.976-.565 2.704-.336 3.711.159l4.931-2.863-3.158-1.569.169-3.632-4.945 2.87c-.07 1.121-.734 2.736-1.705 3.301l-3.383 1.964c-.29-.163-.621-.265-.978-.265zm7.995 1.911l.005.089c0 4.411-3.589 8-8 8s-8-3.589-8-8 3.589-8 8-8c1.475 0 2.853.408 4.041 1.107.334-.586.428-1.544.146-2.18-1.275-.589-2.69-.927-4.187-.927-5.523 0-10 4.477-10 10s4.477 10 10 10c5.233 0 9.521-4.021 9.957-9.142-.301-.483-1.066-1.061-1.962-.947z" />
-                  </svg>
-                </div>
-                <div class="text-dark-blue text-3xl font-medium md:text-3xl">
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
                   Our Mission
                 </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 md:p-16 p-6">
+                  <div className="place-self-center text-gray-700 md:text-xl">
+                    To build simple and sustainable systems that are easily
+                    replicated and scaled to alleviate socio-economic gaps in
+                    low and middle-income countries.
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/1181422/pexels-photo-1181422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
 
-                <div class="md:text-xl">
-                  To create scalable solutions for socio-economic disparities,
-                  challenge established norms with analytical insights, adapt
-                  swiftly amidst challenges, and serve vulnerable communities
-                  with respect and professionalism.
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_589,h_400,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </Carousel.Slide>
 
           <Carousel.Slide>
-            <div class="bg-blue-700 p-10 text-white">
-              <div class="space-y-7">
-                <div class="inline-flex bg-white p-2">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-6 w-6 fill-current text-blue-700 md:h-14 md:w-14"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 5.999l-5.621 2.986c-.899-.104-1.806.191-2.474.859-.662.663-.95 1.561-.862 2.428l-3.043 5.728 5.724-3.042c.884.089 1.772-.205 2.432-.865.634-.634.969-1.524.859-2.473l2.985-5.621zm-5.97 7.22c-.689 0-1.25-.559-1.25-1.249-.001-.691.559-1.251 1.25-1.25.69 0 1.25.56 1.25 1.25-.001.689-.56 1.249-1.25 1.249z" />
-                  </svg>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Mission
                 </div>
-                <div class="text-dark-blue text-3xl font-medium md:text-3xl">
-                  Core Values
-                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 md:text-xl">
+                    To challenge widely held norms and upset historical thinking
+                    using first principlesand analytical insight to understand
+                    the root cause of health and socio-cultural inequalities,
+                    thereby pioneering novel approaches in bridging the gap.
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
 
-                <div class="md:text-xl">
-                  We champion empathy and humanity, foster innovation,
-                  prioritize collaborative efforts and prudence, uphold
-                  unwavering integrity, and celebrate diversity, equity, and
-                  inclusion in all we do.
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/5077047/pexels-photo-5077047.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
           </Carousel.Slide>
 
           <Carousel.Slide>
-            <div class="bg-blue-700 p-10 text-white">
-              <div class="flex flex-col space-y-7">
-                <div class="text-white text-3xl font-medium md:text-3xl">
-                  Learn more about ACE Strategy & Consult
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Mission
                 </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 md:text-xl">
+                    To consistently act in an adaptable and agile manner in
+                    spite of rapidly changing contexts, current and emerging
+                    evidence, and to do so tenaciously despite challenges.
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/10375977/pexels-photo-10375977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
 
-                <div onClick={() => router.push('/who-we-are')} class="self-start bg-white px-4 text-xs cursor-pointer py-2 uppercase tracking-widest text-black">
-                  learn more
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/10375977/pexels-photo-10375977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Mission
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 md:text-xl">
+                    To deliver social action excellently, by prioritising the
+                    most vulnerable and marginalised communities with the
+                    highest regard for professional conduct and respect for
+                    human dignity.
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/9489091/pexels-photo-9489091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/9489091/pexels-photo-9489091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          {/* Core Values */}
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Core Values
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 space-y-3">
+                    <div className="font-semibold uppercase tracking-widest">
+                      humanity
+                    </div>
+                    <div>
+                      The work we do directly impacts the quality of life
+                      &mdash; both health and social outcome - of several
+                      people. Therefore, we believe in empathy for the stewards
+                      of service and for beneficiaries. We believe people are
+                      more than statistics or parts of a machine; they are
+                      significant members of humanity with intrinsic
+                      mind-blowing capabilities.
+                    </div>
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&w=1200")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&w=1200"
+                      alt=""
+                    />
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Core Values
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 space-y-3">
+                    <div className="font-semibold uppercase tracking-widest">
+                      Creativity
+                    </div>
+                    <div>
+                      Multiple routes can lead to the same destination,we are
+                      therefore open to innovative thinking and best practices
+                      that empowers the ecosystems we work in.
+                    </div>
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/3817499/pexels-photo-3817499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/3817499/pexels-photo-3817499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Core Values
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 space-y-3">
+                    <div className="font-semibold uppercase tracking-widest">
+                      Collaboration
+                    </div>
+                    <div>
+                      Outputs are optimised with a collective approach. Working
+                      with altruistic driven partners unmasks blind spots and
+                      eliminates the duplication of effort, enabling us to
+                      exchange learning, and leverage competencies across the
+                      board to achieve more collectively.
+                    </div>
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/1181588/pexels-photo-1181588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/1181588/pexels-photo-1181588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Core Values
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 space-y-3">
+                    <div className="font-semibold uppercase tracking-widest">
+                      Prudence
+                    </div>
+                    <div>
+                      Frugality in maximising the available resources to achieve
+                      optimal results in all the contexts we work in is a
+                      non-negotiable component of our commitment to our clients.
+                    </div>
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/9301833/pexels-photo-9301833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/9301833/pexels-photo-9301833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Core Values
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700 space-y-3">
+                    <div className="font-semibold uppercase tracking-widest">
+                      Integrity
+                    </div>
+                    <div>
+                      Adherence to the highest forms of ethical and professional
+                      conduct in a way that ensures the transparent and
+                      accountable management of people, processes and results is
+                      a hallmark of our service.
+                    </div>
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-top bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/8555677/pexels-photo-8555677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/8555677/pexels-photo-8555677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Carousel.Slide>
+
+          <Carousel.Slide>
+            <div className="md:w-2/3 mx-auto md:ml-36">
+              <div className="pb-20">
+                <div className="text-dark-blue p-10 text-center text-2xl font-medium md:text-6xl">
+                  Our Core Values
+                </div>
+                <div className="md:grid grid-cols-2 space-y-4 md:space-y-0 border-4 border-blue-800 p-16">
+                  <div className="place-self-center text-gray-700">
+                    <div className="font-semibold uppercase tracking-widest">
+                      Diversity, Equity and Inclusion (D,E,I)
+                    </div>
+                    <div>
+                      Tolerance is receptiveness to the beauty of differences. At
+                    ACE we uphold fair treatment and recognize the contributions
+                    of people - not in spite, but because - of their unique
+                    lived experiences and the product of their different
+                    political, spiritual, sexual, racial, gender, health,
+                    marital, genetic, or mental peculiarities.
+                    </div>
+                  </div>
+                  <div className="md:-mr-80 place-self-center bg-black">
+                    <div
+                      className="w-[28rem] h-[18rem] bg-center bg-cover bg-no-repeat hidden md:block"
+                      style={{
+                        backgroundImage: `url("https://images.pexels.com/photos/7293100/pexels-photo-7293100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2")`,
+                      }}
+                      alt=""
+                    ></div>
+
+                    <img
+                      className="w-[28rem] md:hidden block"
+                      src="https://images.pexels.com/photos/7293100/pexels-photo-7293100.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -528,7 +836,7 @@ export default function Home() {
         <div className="text-center text-4xl font-bold capitalize text-light-blue">
           Our partners
         </div>
-        <div className="mx-auto grid grid-cols-3 gap-8 px-6 md:w-2/3 md:grid-cols-6">
+        <div className="mx-auto grid grid-cols-3 gap-8 px-6 md:md:w-2/3 md:grid-cols-6">
           <img
             src="https://res.cloudinary.com/daojlqwdo/image/upload/v1691875981/ace/partners/p3-2_ak8nrg.png"
             className="w-36 cursor-pointer grayscale hover:grayscale-0"

@@ -1,44 +1,52 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Head from "next/head";
+import teamData from "../lib/team.json";
+
 
 export default function WhoWeAre() {
     return (
       <>
         <Header />
 
-         <Head>
-        <title>About Us &mdash; Ace Strategy & Consults</title>
-        <meta
-          name="description"
-          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
-        />
-        <meta
-          name="keywords"
-          content="Ace Strategy, Consults, evidence-based solutions, human-centred design, actionable solutions"
-        />
-        <meta name="author" content="Ace Strategy & Consults" />
+        <Head>
+          <title>About Us &mdash; Ace Strategy & Consults</title>
+          <meta
+            name="description"
+            content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+          />
+          <meta
+            name="keywords"
+            content="Ace Strategy, Consults, evidence-based solutions, human-centred design, actionable solutions"
+          />
+          <meta name="author" content="Ace Strategy & Consults" />
 
-        {/* Open Graph / Facebook */}
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://acestrategy.org" />
-        <meta property="og:title" content="Ace Strategy & Consults" />
-        <meta
-          property="og:description"
-          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
-        />
-        <meta property="og:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
+          {/* Open Graph / Facebook */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://acestrategy.org" />
+          <meta property="og:title" content="Ace Strategy & Consults" />
+          <meta
+            property="og:description"
+            content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+          />
+          <meta
+            property="og:image"
+            content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+          />
 
-        {/* Twitter */}
-        <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://acestrategy.org" />
-        <meta property="twitter:title" content="Ace Strategy & Consults" />
-        <meta
-          property="twitter:description"
-          content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
-        />
-        <meta property="twitter:image" content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png" />
-      </Head>
+          {/* Twitter */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://acestrategy.org" />
+          <meta property="twitter:title" content="Ace Strategy & Consults" />
+          <meta
+            property="twitter:description"
+            content="We aid organizations to design iterative, evidence-based, human-centred and actionable solutions."
+          />
+          <meta
+            property="twitter:image"
+            content="https://res.cloudinary.com/daojlqwdo/image/upload//c_thumb,w_500,h_500,g_auto/v1692577688/ace/pexels-monstera-9430883_bqsij3.png"
+          />
+        </Head>
 
         {/* <!-- SubHeader --> */}
         <div
@@ -79,8 +87,46 @@ export default function WhoWeAre() {
           </div>
         </div>
 
+        {/* {teamData.people.map((person) => (
+          <div key={person.name}>
+            <h2>{person.name}</h2>
+            <p>{person.bio}</p>
+            <img src={person.image} alt={person.name} />
+          </div>
+        ))} */}
 
-          {/* <!-- Other --> */}
+        <div className="space-y-7 px-6 pb-10 md:px-28 md:pb-20">
+          <div className="text-dark-blue text-3xl font-medium md:text-7xl">
+            Our Team
+          </div>
+          <div className="grid grid-cols-4 gap-8">
+            {teamData.people.map((person) => (
+              <div
+                key={person?.name}
+                className="grid place-items-center space-y-5 rounded-md bg-blue-50 p-7"
+              >
+                <div
+                  className="inline-flex h-40 w-40 rounded-full border bg-cover bg-center"
+                  style={{
+                    backgroundImage: `url(${person?.image})`,
+                  }}
+                ></div>
+                <div className="text-center">
+                  <div className="text-2xl font-medium capitalize">
+                    {person?.name}
+                  </div>
+                  <div className="text-sm">{person?.role}</div>
+                </div>
+                <div className="cursor-pointer text-xs font-bold uppercase tracking-widest hover:opacity-70">
+                  View profile
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="text-gray-700 md:text-2xl"></div>
+        </div>
+
+        {/* <!-- Other --> */}
         <div className="mx-auto px-6 md:w-3/4 pb-20">
           <div className="grid grid-cols-2 gap-10">
             <div className="col-span-2 space-y-6 place-self-start border-l-2 border-t-2 border-light-blue bg-gray-100">

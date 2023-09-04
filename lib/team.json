@@ -1,0 +1,46 @@
+{
+  "people": [
+    {
+      "name": "Afeez Olajire",
+      "role": "Managing Partner",
+      "bio": "Afeez has over ten years of experience as a management consultant. He is the Managing Partner/CEO at ACE Strategy and Consults Limited. As a seasoned professional with several years of experience in health system strengthening and international development, Afeez has led projects on health financing, resource mobilization, leadership and management, service delivery, monitoring and evaluation, knowledge management, and supply chain management. He has collaborated with a range of clients including the Bill and Melinda Gates Foundations, Aliko Dangote Foundation, Gavi, and the World Bank, to strengthen primary healthcare (PHC) and improve health outcomes.\n\nHe served as an area owner and Senior Associate on the Global Vaccine Delivery team with CHAI. In this role, he supported the Southeast Asia Pacific countries (Laos, Cambodia, Indonesia, and Papua New Guinea) in developing a monitoring and evaluation framework that aligns with accountability frameworks to track both financial and technical program performance in preparation for transition from Gavi funding.\n\nBefore his current roles, Afeez worked at Solina Health, Sydani, and UNICEF. He holds a master's degree in public health from the University of Ibadan.",
+      "image": "https://res.cloudinary.com/daojlqwdo/image/upload/v1693831065/ace/Screenshot_2023-09-04_at_1.37.23_PM_cue8zo.png"
+    },
+    {
+      "name": "Dr. Barakat Adewumi",
+      "role": "Operations Coordinator",
+      "bio": "Barakat is a seasoned professional with over seven years of experience in the operational and programmatic space. She has extensive experience designing, implementing, and evaluating public health interventions across research-based organizations, veterinary enterprises, and broader public health sectors. She possesses distinctive prowess in analytics, problem-solving, team leadership, talent management, and brilliant interpersonal skills.\n\nBefore joining ACE, she served as the Operations Manager at Bamaf Veterinary Services and Zeemah Consults for over six years, where she led the coordination and evaluation of processes surrounding financial and human management.\n\nAt ACE Strategy and Consults, she oversees the talent, finance, communication, and logistics workstreams. She earned a Doctor of Veterinary Medicine (DVM) from the prestigious University of Ibadan and is currently pursuing her MBA at the University of East London, UK.",
+      "image": "null"
+    },
+    {
+      "name": "Toluwanimi Adewole",
+      "role": "Engagement Manager",
+      "bio": "Toluwanimi is a seasoned management consultant with over five years of experience designing and implementing solutions to strengthen health systems and instituting monitoring and evaluation frameworks and systems across African countries. Her experience includes increasing the immunization coverage from 19% to 43% in Kano state, Nigeria, through problem identification analysis, design, and deployment of targeted solutions in areas such as service delivery, financial management, monitoring and evaluation, and community engagement. Beyond the sub-national level, she provided support to the National Emergency Routine Immunization Center (NERICC) where she assisted in the development of the Nigeria Strategy for Immunization and PHC System Strengthening Version 2.0 (NSIPSS 2.0) with government representatives. She also offered technical and program support to the National Vaccine Strategic Task Team (NVSTT), ensuring the successful introduction of new vaccines into Nigeria's routine immunization schedule.\n\nNimi led the baseline diagnostic of the Guinea-Bissau immunization and COVID-19 system to identify challenges and design solutions to enhance overall coverage. She has undertaken various training sessions and holds certificates in Leadership Development, Public Health Research (from The Collaborative Institutional Training Initiative (CITI program)), Nigerian National Code for Health Research Ethics (CITI), and Teach to Reach Accelerator Level 1 for Immunization (from Geneva Learning Foundation).\n\nAt ACE Strategy and Consults, she oversees the MNH portfolio and grant management. She earned her bachelor's degree (BSc.) in Industrial Mathematics from Covenant University, Ota, Nigeria.",
+      "image": "https://res.cloudinary.com/daojlqwdo/image/upload/v1693832520/ace/Screenshot_2023-09-04_at_2.01.38_PM_ktf1tt.png"
+    },
+    {
+      "name": "Aminat Yekeen",
+      "role": "Program Analyst",
+      "bio": "Aminat Yekeen is a health system strengthening enthusiast. In her role at ACE Strategy and Consults, she actively supports various HSS work streams with a focus on public financial management, leadership and governance, service delivery, monitoring and evaluation, knowledge management, as well as demand and evidence generation. Aminat has contributed to several high-impact projects, such as her involvement with the Global Alliance for Improved Nutrition (GAIN) where she worked to bolster nutrition and ensure food and nutrition safety, as well as undertaking readiness assessments and capacity building resources. She earned her Bachelor's Degree (BSc.) in Business Administration.",
+      "image": "https://res.cloudinary.com/daojlqwdo/image/upload/v1693832663/ace/Screenshot_2023-09-04_at_2.04.04_PM_nhuz65.png"
+    },
+    {
+      "name": "Deborah Ukeje",
+      "role": "Senior Program Analyst",
+      "bio": "Deborah is a social development enthusiast with over three years of experience in the human development sector. She excels in data analysis and interpretation, program evaluation, capacity building, advocacy brief development, and health financing analysis. Deborah has consistently used data-driven insights to improve healthcare program effectiveness and optimize service delivery. This was notably demonstrated when she contributed to several data studies and surveys during the evaluation of the BMGF and ADF funded Northern Nigerian Routine Immunization Strengthening Program (NNRISP) across six states in Nigeria. She earned her bachelor's degree (BSc.) in Education government from Abia State University, Uturu.",
+      "image": "https://res.cloudinary.com/daojlqwdo/image/upload/v1693832986/ace/Screenshot_2023-09-04_at_2.09.17_PM_bqy4st.png"
+    },
+    {
+      "name": "Rahmah Bello",
+      "role": "Program Analyst",
+      "bio": "Rahmah is a skilled management consultant boasting over 2 years of field experience serving an array of clients at both national and subnational levels. As an Analyst at ACE Strategy and Consults Limited, she aids the monitoring, evaluation, and learning work streams in achieving their set priorities. With her enthusiastic professional background in the coordination of health/healthcare delivery, data management, health management, and quality assurance processes, Rahmah has offered her support to numerous projects emphasizing service delivery, diagnostics, and evidence generation. Her extensive client portfolio includes the Bill and Melinda Gates Foundation, Avigo Health, and MSI Reproductive Choices, among others. She obtained her bachelor’s degree in Medical Biochemistry from the University of Cross Rivers State (UNICROSS).",
+      "image": "https://res.cloudinary.com/daojlqwdo/image/upload/v1693834648/ace/Screenshot_2023-09-04_at_2.37.10_PM_oumfud.png"
+    },
+    {
+      "name": "Sherif Oyewole",
+      "role": "Public Health Advocate",
+      "bio": "Sherif is a fervent public health and child health advocate. His talent is unmistakably evident in his results-driven approach, underpinned by a strong passion for capacity building, data collection, data analysis, content writing, and virtual assistance. Sherif has a proven knack for synthesizing data to craft impactful stories and packages geared for advocacy. He obtained his Bachelor's degree (Btech) in Architecture from Ladoke Akintola University of Technology.",
+      "image": "https://res.cloudinary.com/daojlqwdo/image/upload/v1693834746/ace/Screenshot_2023-09-04_at_2.38.42_PM_iojgyn.png"
+    }
+  ]
+}

@@ -238,8 +238,6 @@ export default function Home() {
                       src="https://images.pexels.com/photos/10375977/pexels-photo-10375977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                       alt=""
                     />
-
-
                   </div>
                 </div>
               </div>
@@ -273,8 +271,6 @@ export default function Home() {
                       src="https://images.pexels.com/photos/9489091/pexels-photo-9489091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                       alt=""
                     />
-
-
                   </div>
                 </div>
               </div>
@@ -317,8 +313,6 @@ export default function Home() {
                       src="https://images.pexels.com/photos/4322027/pexels-photo-4322027.jpeg?auto=compress&cs=tinysrgb&w=1200"
                       alt=""
                     />
-
-
                   </div>
                 </div>
               </div>
@@ -356,8 +350,6 @@ export default function Home() {
                       src="https://images.pexels.com/photos/3817499/pexels-photo-3817499.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                       alt=""
                     />
-
-
                   </div>
                 </div>
               </div>
@@ -397,8 +389,6 @@ export default function Home() {
                       src="https://images.pexels.com/photos/1181588/pexels-photo-1181588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                       alt=""
                     />
-
-
                   </div>
                 </div>
               </div>
@@ -492,12 +482,12 @@ export default function Home() {
                       Diversity, Equity and Inclusion (D,E,I)
                     </div>
                     <div>
-                      Tolerance is receptiveness to the beauty of differences. At
-                    ACE we uphold fair treatment and recognize the contributions
-                    of people - not in spite, but because - of their unique
-                    lived experiences and the product of their different
-                    political, spiritual, sexual, racial, gender, health,
-                    marital, genetic, or mental peculiarities.
+                      Tolerance is receptiveness to the beauty of differences.
+                      At ACE we uphold fair treatment and recognize the
+                      contributions of people - not in spite, but because - of
+                      their unique lived experiences and the product of their
+                      different political, spiritual, sexual, racial, gender,
+                      health, marital, genetic, or mental peculiarities.
                     </div>
                   </div>
                   <div className="md:-mr-80 place-self-center bg-black">
@@ -591,6 +581,7 @@ export default function Home() {
               Learn more
             </div>
           </div>
+
           <div className="space-y-6 bg-gray-200 p-6 md:p-10">
             <div className="">
               <svg
@@ -611,6 +602,47 @@ export default function Home() {
             <div className="text-gray-700">
               We aid organizations to design iterative, evidence-based,
               human-centred and actionable solutions.
+            </div>
+
+            <div
+              onClick={() => router.push("/who-we-are")}
+              className="hidden cursor-pointer font-medium hover:underline md:flex"
+            >
+              Learn more
+            </div>
+          </div>
+
+          <div className="space-y-6 bg-gray-200 p-6 md:p-10">
+            <div className="">
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="fill-current text-gray-700"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+              >
+                <path d="M23.948.042c-.413-.028-.817-.042-1.214-.042-8.6 0-13.497 6.557-15.278 11.833l4.727 4.727c5.428-1.944 11.817-6.66 11.817-15.168 0-.44-.017-.89-.052-1.35zm-11.277 14.178l-2.883-2.883c1.221-2.859 4.691-8.945 12.199-9.32-.251 5.775-4.041 9.932-9.316 12.203zm5.471 1.538c-.547.373-1.09.71-1.628 1.011-.187.891-.662 1.842-1.351 2.652-.002-.576-.162-1.156-.443-1.738-.495.225-.966.418-1.414.588.66 1.709-.012 2.971-.915 4.154 1.296-.098 2.656-.732 3.728-1.805 1.155-1.155 1.967-2.823 2.023-4.862zm-11.82-6.469c-.579-.28-1.158-.438-1.732-.441.803-.681 1.744-1.153 2.626-1.345.314-.552.667-1.097 1.039-1.633-2.039.055-3.708.867-4.864 2.023-1.071 1.071-1.706 2.433-1.804 3.728 1.184-.904 2.446-1.576 4.155-.914.173-.471.366-.944.58-1.418zm7.738.663c-.391-.391-.391-1.023 0-1.414s1.023-.391 1.414 0c.391.392.391 1.024 0 1.415s-1.024.39-1.414-.001zm4.949-4.951c-.78-.78-2.047-.78-2.828 0-.781.781-.781 2.049 0 2.829.781.781 2.048.781 2.829 0 .78-.78.78-2.047-.001-2.829zm-1.908 1.911c-.273-.273-.273-.718 0-.99.271-.273.717-.273.99 0 .272.272.271.717 0 .99-.274.272-.718.272-.99 0zm-6.747 10.65c-1.492 3.81-5.803 6.208-10.354 6.438.219-4.289 2.657-8.676 6.64-10.153l.805.806c-4.331 2.755-4.653 5.346-4.665 6.575 1.268-.015 4.054-.344 6.778-4.464l.796.798z" />
+              </svg> */}
+
+              <svg
+                className="fill-current text-gray-700"
+                width="24"
+                height="24"
+                xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+              >
+                <path d="M12 0c-3.371 2.866-5.484 3-9 3v11.535c0 4.603 3.203 5.804 9 9.465 5.797-3.661 9-4.862 9-9.465v-11.535c-3.516 0-5.629-.134-9-3zm0 2.544c2.5 1.805 4.555 2.292 7 2.416v9.575c0 3.042-1.686 3.827-7 7.108-5.309-3.278-7-4.065-7-7.108v-9.575c2.447-.124 4.5-.611 7-2.416zm0 3.956c3.036 0 5.5 2.464 5.5 5.5s-2.464 5.5-5.5 5.5-5.5-2.464-5.5-5.5 2.464-5.5 5.5-5.5zm1 2.5h-2v2h-2v2h2v2h2v-2h2v-2h-2v-2z" />
+              </svg>
+            </div>
+
+            <div className="text-2xl font-medium text-dark-blue">
+              Digital Health
+            </div>
+
+            <div className="text-gray-700">
+              We help organizations harness digital tools, ensuring
+              comprehensive, sustainable, and efficient health services.
             </div>
 
             <div

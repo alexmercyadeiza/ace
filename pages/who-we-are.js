@@ -2,9 +2,18 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Head from "next/head";
 import teamData from "../lib/team.json";
+import { useState } from "react";
 
 
 export default function WhoWeAre() {
+  const [modal, setModal] = useState(false);
+  const [bio, setBio] = useState('');
+  
+  const modalInfo = (data) => {
+    setModal(true);
+    setBio(data);
+  }
+
     return (
       <>
         <Header />
@@ -99,7 +108,7 @@ export default function WhoWeAre() {
           <div className="text-dark-blue text-3xl font-medium md:text-7xl">
             Our Team
           </div>
-          <div className="grid grid-cols-4 gap-8">
+          <div className="md:grid space-y-3 md:space-y-0 grid-cols-4 gap-8">
             {teamData.people.map((person) => (
               <div
                 key={person?.name}
@@ -112,12 +121,15 @@ export default function WhoWeAre() {
                   }}
                 ></div>
                 <div className="text-center">
-                  <div className="text-2xl font-medium capitalize">
+                  <div className="text-2xl text-dark-blue font-medium capitalize">
                     {person?.name}
                   </div>
                   <div className="text-sm">{person?.role}</div>
                 </div>
-                <div className="cursor-pointer text-xs font-bold uppercase tracking-widest hover:opacity-70">
+                <div
+                  onClick={() => modalInfo(person?.bio)}
+                  className="cursor-pointer text-xs font-bold uppercase tracking-widest hover:opacity-70"
+                >
                   View profile
                 </div>
               </div>
@@ -292,6 +304,27 @@ export default function WhoWeAre() {
           </div>
         </div>
         <Footer />
+
+        <>
+          {modal && (
+            <div className="fixed inset-0 z-50 flex items-center justify-center p-2 md:p-0">
+              <div className="absolute inset-0 bg-black opacity-50"></div>
+              <div className="z-10 md:w-1/2 rounded-lg bg-white p-6 overflow-y-auto max-h-screen shadow-xl">
+                <div className="mb-3 grid">
+                  <button
+                    onClick={() => setModal(!modal)}
+                    className="place-self-end text-4xl text-gray-600 hover:text-gray-900"
+                  >
+                    &times;
+                  </button>
+                </div>
+                <div className="overflow-y-auto">
+                  <p className="text-sm">{bio}</p>
+                </div>
+              </div>
+            </div>
+          )}
+        </>
       </>
     );
 }

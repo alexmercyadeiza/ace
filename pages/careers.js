@@ -155,14 +155,19 @@ export default function Careers() {
                 </span>
               </div>
               <div className="border-t"></div>
-              <div className="font-semibold">
+              {/* <div className="font-semibold">
                 Click the link below to apply.
-              </div>
+              </div> */}
 
-              <div>
-                <a className="text-blue-500 font-medium" href="https://forms.gle/CsKSEmzRyTkG3X596">
-                  https://forms.gle/CsKSEmzRyTkG3X596
+              <div className="font-medium">
+                Click&nbsp;
+                <a
+                  className="text-blue-500 font-medium"
+                  href="https://forms.gle/CsKSEmzRyTkG3X596"
+                >
+                  here
                 </a>
+                &nbsp;to submit your application.
               </div>
               <div>
                 Applicant(s) would be contacted for a preliminary chat if the
@@ -256,7 +261,7 @@ export default function Careers() {
                   <input type="file" name="upload" accept=".doc,.docx,.pdf" />
                 </div> */}
 
-                {/* {!loading ? (
+            {/* {!loading ? (
                   <button
                     type="submit"
                     className="inline-flex cursor-pointer place-self-start bg-black px-4 py-2 text-sm font-semibold uppercase tracking-widest text-white"

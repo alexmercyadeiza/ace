@@ -167,7 +167,7 @@ export default function Careers() {
                 >
                   here
                 </a>
-                &nbsp;to submit your application.
+                &nbsp;to submit your profile.
               </div>
               <div>
                 Applicant(s) would be contacted for a preliminary chat if the

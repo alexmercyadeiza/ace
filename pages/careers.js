@@ -161,7 +161,7 @@ export default function Careers() {
 
               <div className="font-medium">
                 Click&nbsp;
-                <a
+                <a target="_blank" rel="noreferrer"
                   className="text-blue-500 font-medium"
                   href="https://forms.gle/CsKSEmzRyTkG3X596"
                 >

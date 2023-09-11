@@ -146,7 +146,7 @@ export default function Careers() {
       {/* <!-- Main --> */}
       <div className="grid">
         <div className="gap-12 px-6 py-10 md:px-28 md:py-28">
-          <div className="grid md:gap-20 gap-10 space-y-6 md:grid-cols-2">
+          <div className="grid md:gap-20 gap-10 space-y-6 md:grid-cols-1">
             <div className="space-y-6 place-self-center">
               <div>
                 Open vacancies will be listed intermittently as they arise.{" "}
@@ -156,7 +156,13 @@ export default function Careers() {
               </div>
               <div className="border-t"></div>
               <div className="font-semibold">
-                You can also upload your resume by filling the form below.
+                Click the link below to apply.
+              </div>
+
+              <div>
+                <a className="text-blue-500 font-medium" href="https://forms.gle/CsKSEmzRyTkG3X596">
+                  https://forms.gle/CsKSEmzRyTkG3X596
+                </a>
               </div>
               <div>
                 Applicant(s) would be contacted for a preliminary chat if the
@@ -167,7 +173,7 @@ export default function Careers() {
               </div>
             </div>
 
-            <div className="mx-auto place-self-center">
+            {/* <div className="mx-auto place-self-center">
               <form
                 encType="multipart/form-data"
                 onSubmit={processForm}
@@ -250,7 +256,7 @@ export default function Careers() {
                   <input type="file" name="upload" accept=".doc,.docx,.pdf" />
                 </div> */}
 
-                {!loading ? (
+                {/* {!loading ? (
                   <button
                     type="submit"
                     className="inline-flex cursor-pointer place-self-start bg-black px-4 py-2 text-sm font-semibold uppercase tracking-widest text-white"
@@ -275,7 +281,7 @@ export default function Careers() {
                   </div>
                 )}
               </form>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

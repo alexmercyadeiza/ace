@@ -105,10 +105,10 @@ export default function WhoWeAre() {
         ))} */}
 
         <div className="space-y-7 px-6 pb-10 md:px-28 md:pb-20">
-          <div className="text-dark-blue text-3xl font-medium md:text-7xl">
+          <div className="text-dark-blue text-center text-3xl font-medium md:text-7xl">
             Our Core Team
           </div>
-          <div className="md:grid space-y-3 md:space-y-0 grid-cols-4 gap-8">
+          <div className="md:grid space-y-3 md:space-y-0 grid-cols-3 md:w-3/4 mx-auto gap-8">
             {teamData.people.map((person) => (
               <div
                 key={person?.name}

@@ -115,7 +115,7 @@ export default function WhoWeAre() {
                 className="grid place-items-center space-y-5 rounded-md bg-blue-50 p-7"
               >
                 <div
-                  className="inline-flex h-40 w-40 rounded-full border bg-cover bg-center"
+                  className="inline-flex h-40 w-40 rounded-full bg-cover bg-center"
                   style={{
                     backgroundImage: `url(${person?.image})`,
                   }}

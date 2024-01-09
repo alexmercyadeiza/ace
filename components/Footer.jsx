@@ -122,7 +122,8 @@ export default function Footer() {
 
       <div className="md:flex items-center justify-between md:space-x-4 space-y-6 md:space-y-0 border-t border-white border-opacity-30 pt-10 md:space-x-0">
         <div className="text-xs">
-          Ace Strategy and Consult Limited 2023 &copy; All rights reserved.
+          &copy; 2023 - {new Date().getFullYear()}. Ace Strategy and Consult
+          Limited.
         </div>
         <div className="flex items-center space-x-3 md:space-x-6">
           {/* <a href="#">
